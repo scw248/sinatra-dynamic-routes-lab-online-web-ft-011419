@@ -15,7 +15,7 @@ class App < Sinatra::Base
   
   get "/say/:number/:phrase" do   
     @user_number = params[:number]  
-    binding.pry
+    #binding.pry
     @user_phrase = params[:phrase] 
     @user_number.to_i.times do
       "#{@user_phrase}"
