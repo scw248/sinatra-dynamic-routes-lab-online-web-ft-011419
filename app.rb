@@ -20,6 +20,7 @@ class App < Sinatra::Base
     @user_number.to_i.times do
       @return_string += '#{@user_phrase}'
     end
+    @return_string
   end
   
   get '/say/:word1/:word2/:word3/:word4/:word5' do    
