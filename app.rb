@@ -16,6 +16,7 @@ class App < Sinatra::Base
   get "/say/:number/:phrase" do   
     @user_number = params[:number]  
     @user_phrase = params[:phrase]
+    @counter = 0
     @user_number.times do
       "#{@user_phrase}"
     end
