@@ -40,11 +40,14 @@ class App < Sinatra::Base
       @result = @number1.to_i + @number2.to_i
       @result.to_s
     elsif @user_operation == 'subtract'
-      @number1.to_i - @number2.to_i
+      @result = @number1.to_i - @number2.to_i
+      @result.to_s
     elsif @user_operation == 'multiply'
-      @number1.to_i * @number2.to_i
+      @result = @number1.to_i * @number2.to_i
+      @result.to_s
     else
-      @number1.to_i / @number2.to_i
+      @result = @number1.to_i / @number2.to_i
+      @result.to_s
     end
   end
 
