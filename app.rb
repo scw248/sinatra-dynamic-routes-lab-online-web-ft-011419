@@ -31,7 +31,8 @@ class App < Sinatra::Base
   end
   
   get'/:operation/:number1/:number2' do    
-    @user_name = params[:name]    
+    @user_operation = params[:operation]
+    
     "Hello #{@user_name}!"  
   end
 
